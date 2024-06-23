@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+<script>
+    document.addEventListener("DOMContentLoaded", () =>{
+
+        document.querySelector("#pass").disabled = true;
+
+        document.querySelector("#name").onkeyup = () =>{
+            if(document.querySelector("#name").value.length >0){
+
+                document.querySelector("#pass").disabled = false;
+
+            }
+            else{
+                document.querySelector("#pass").disabled = true;
+            }
+        };
+
+    });
+
+
+
+
+
+
+</script>
+    <form id="form">
+        <input id="name" type="text" placeholder="Name">
+        <input id="pass" type="submit">
+    </form>
+
+
+
+
+    
+</body>
+</html>
