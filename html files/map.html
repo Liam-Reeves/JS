@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numberArray =[1,2,3,5,8,90,667]
+
+        const doubleArray = numberArray.map( numberItem =>{
+            return numberItem * 2;
+
+        });
+        console.log(doubleArray);
+
+        const numArray = [10,20,50,60,88,90];
+
+        const dubarray =numArray.map( num => num * 2 );
+        
+        console.log(dubarray);
+
+
+
+        const myName = "Sonny";
+        const nameArray = myName.split('');
+        const newName = myName.split("").map( l => `${l}${l}`);
+        console.log(newName);
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
