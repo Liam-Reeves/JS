@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user = {
+            name: "Liam",
+            age: 20,
+            hobbies: ["music", "movies", "sports"],
+            location: " Nairobi",
+            country: "Kenya",
+            login: () =>{
+                console.log("The user has logged in");
+            }
+        }
+        console.log(user.login());
+
+        console.log(user);
+        console.log(user.name);
+        console.log(user.age);
+        console.log(user.hobbies);
+        console.log(user.location);
+        console.log(user.country);
+
+        user.age = 35;
+        console.log(user.age);
+        console.log(user['location']);
+        user['location'] ='Kiambu';
+        console.log(user['location']);
+
+
+        console.log(typeof user);
+
+
+        const name = 'mario'
+        name.toUpperCase();
+
+
+        console.log(name.toUpperCase());
+        console.log(name.toLowerCase());
+        console.log(name.length);
+        console.log(name.indexOf('o'));
+        console.log(name.lastIndexOf('o'));
+        console.log(name.slice(1,3));
+        console.log(name.substring(1,3));
+        console.log(name.slice(-3));
+        console.log(name.split(''));
+        console.log(name.replace('o','a'));
+        console.log(name.includes('o'));
+        console.log(name.startsWith('m'));
+        console.log(name.endsWith('o'));
+        console.log(name.repeat(6));
+        console.log(name.trim());
+        console.log(name.trimStart());
+        console.log(name.trimEnd());
+
+    document.addEventListener("DOMContentLoaded", () =>{
+        const para = document.querySelectorAll('p');
+        console.log(para);
+
+        const error = document.querySelectorAll('.error').style.color ='red';
+        console.log(error);
+
+        }
+
+    );
+  
+
+
+
+
+    </script>
+
+    <p>Hello world</p>
+    <p class ="error">Brr</p>
+    <p class="error">hjhhjh</p>
+
+    
+</body>
+</html>

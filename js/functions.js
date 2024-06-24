@@ -27,4 +27,16 @@ let pp = multiply(3,3);
 console.log("Result of multiplying is " +  pp)
 
 
+// the word function can be replaced by writing ()=>
+// the parenthensis explains that our function has no name
+
+// if we want to give a function a name we do it as follows:
+
+
+// add =>{
+
+// };
+
+
+
 
